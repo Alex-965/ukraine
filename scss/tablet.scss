@@ -1,0 +1,132 @@
+@media (min-width: 720px) and (max-width: 1240px) {
+
+    .container{
+        max-width: 660px;
+        margin: 0 auto;
+    }
+    .header_nav{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .header-image{
+        grid-row: 2/-1 !important;
+        border-radius: 100px 0px 0px 100px !important;
+        width: 450px;
+        display: none;
+    }
+
+    header{
+        padding: 0px 50px 0px 50px;
+        .container{
+            .header_row{
+                    display: grid;
+                    grid: auto 0.6fr auto auto auto auto 0.3fr/ auto auto auto;
+
+                    .more{
+                        width: 250px;
+                    }
+            }
+        }
+    }
+    .main
+        .past{
+            .mentality{
+                .container{
+                    grid: auto 1fr / 0.5fr 0.5fr;
+                    justify-content: center;
+                }
+            }
+
+            .kozak{
+                .container{
+                    grid: auto 1fr 1fr / 0.55fr 0.55fr;
+                    justify-content: center;
+
+                    .kozak-info{
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .sky{
+                .containern{
+                    display: grid;
+                    grid: auto 1fr auto / auto;
+                    max-width: 660px;
+                    margin: 0 auto;
+                    padding: 50px 0px;
+
+                    h2{
+                        grid-column: 1/-1;
+                    }
+
+                    p{
+                        grid-column: 1/-1;
+                        grid-row: 2/3;
+                        text-align: center;
+                    }
+
+                    img{
+                        grid-row: 3/4;
+                        justify-self: center;
+                    }
+
+                    a{
+                        grid-column: 1/2;
+                        grid-row: 4/5;
+                        justify-self: center;
+                        align-self: center;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    .main .present .who .container{
+        display: grid;
+        grid: auto 1fr 1fr / 1fr 1fr;
+    }
+
+    .main .present .coming .container{
+        grid: auto 1fr 1fr 1fr / 1fr  1fr;
+        
+        img{
+            justify-self: center;
+
+            &:nth-child(6){
+                grid-column: 1/-1;
+            }
+        }
+    }
+
+    .main .present .president .container{
+        display: flex;
+        flex-direction: column;
+        
+        img{
+            width: 200px;
+            align-self: center;
+            order: 1;
+        }
+        h2{
+            order: 2;
+            text-align: center;
+        }
+    }
+
+    .didgitalization_grid{
+        grid: 1fr 1fr 1fr / 1fr 1fr;
+    }
+    .we_nation{
+        grid: auto 1fr 1fr / 1fr 1fr;
+
+        img{
+            justify-self: center;
+        }
+    }
+
+    .ua_about_ukraine {
+        display: flex;
+        flex-direction: column;
+    }
+}
